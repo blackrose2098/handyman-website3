@@ -957,3 +957,7 @@ nav ul {
   background-color: var(--secondary-color);
 }
 
+.facebook-btn-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
