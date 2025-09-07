@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Service Videos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    
+    <div class="container">
+            <div class="logo">
+                <h1> CYRIL'S HANDYMAN SERVICES</h1>
+                <span>Durban's Trusted Repair Experts</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="social-header">
+                    <a href="https://www.facebook.com/cyril.katzen" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+27670898615" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+  <h1 style="text-align:center; margin-top: 20px;">Our Service Videos</h1>
+    
+</header>
+    
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Handyman Services in Durban</h1>
+                <p>Fast, reliable repairs for your home or business. We handle everything from plumbing to electrical work with expert care.</p>
+                <div class="hero-btns">
+                    <a href="tel:0670898615" class="btn primary">Call Now</a>
+                    <a href="#contact" class="btn secondary">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="videos-page">
+  <div class="video-grid">
+
+    <div class="video-card">
+      <h3>Wall Mounting</h3>
+      <video controls>
+        <source src="Videos/Vid-20250904-Wa0009.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="video-card">
+      <h3>Plumbing Repairs</h3>
+      <video controls>
+        <source src="Videos/Vid-20250904-Wa0008.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="video-card">
+      <h3>Roof cleaning & Painting</h3>
+      <video controls>
+        <source src="Videos/Vid-20250904-Wa0007.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+</section>
+
+    
+    
+      <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>CYRIL'S HANDYMAN SERVICES</h3>
+                    <p>Professional repair and maintenance services in Durban. We're committed to quality work and customer satisfaction.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+    <h3>Services</h3>
+    <ul>
+        <li><a href="#services">Roof Cleaning & Painting</a></li>
+        <li><a href="#services">Home Improvements & Repairs</a></li>
+        <li><a href="#services">Basic Electrical</a></li>
+        <li><a href="#services">Plumbing</a></li>
+        <li><a href="#services">Solar Panel Cleaning</a></li>
+        <li><a href="#services">Cupboard Repairs</a></li>
+    </ul>
+</div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:0670898615"><i class="fas fa-phone"></i> 067 089 8615</a></li>
+                        <li><a href="mailto:katzencyril413@gmail.com"><i class="fas fa-envelope"></i> katzencyril413@gmail.com</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=27A+Constance+Cawston+Road,+westville,+3629,+durban" target="_blank"><i class="fas fa-map-marker-alt"></i> 27A Constance Cawston Road, Westville</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cyril's handyman services(PTY) LTD. All Rights Reserved.</p>
+                <div class="social-footer">
+                    <a href="https://www.facebook.com/cyril.katzen" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+27670898615" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+      <script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', function() {
+            // Close mobile menu if open
+            document.querySelector('nav ul').classList.remove('show');
+            
+            // Handle internal page links
+            if(this.getAttribute('href').startsWith('#')) {
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    event.preventDefault();
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            // External links will proceed normally
+        });
+    });
+</script>
+    
+    <script>
+  // Get all video elements
+  const videos = document.querySelectorAll(".video-card video");
+
+  videos.forEach(video => {
+    video.addEventListener("play", () => {
+      // Pause all other videos when one is played
+      videos.forEach(otherVideo => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+</script>
+
+    
+</body>
+</html>
